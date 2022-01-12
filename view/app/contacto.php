@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="<?php echo $_SESSION['public'] ?>public/css/contact.css">
+
+
 <h3>
     <a href="<?php echo $_SESSION['home'] ?>" title="Inicio">Inicio</a> <span>| Contacto</span>
 </h3>
@@ -32,8 +39,8 @@
 
 <div style="overflow:auto;">
   <div style="float:right;">
-    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+    <button type="button" id="nextBtn" onclick="nextPrev(1)">Seguinte</button>
   </div>
 </div>
 
@@ -46,5 +53,5 @@
 </div>
 
 </form>
-  
+ <script src="<?php echo $_SESSION['public'] ?>public/js/contacto.js"></script>
 </div>
